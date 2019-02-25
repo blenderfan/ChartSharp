@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("axi",["Class"],[["AxisStyle",,[["ChartSharp",,,,0,"File:AxisStyle.cs:ChartSharp.AxisStyle","CSharpClass:ChartSharp.AxisStyle"]]]]);

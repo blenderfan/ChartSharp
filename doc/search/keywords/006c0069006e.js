@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("lin",["Class"],[["LineChart",,[["ChartSharp",,,,0,"File:LineChart.xaml.cs:ChartSharp.LineChart","CSharpClass:ChartSharp.LineChart"]]],["LineData",,[["ChartSharp",,,,0,"File:LineData.cs:ChartSharp.LineData","CSharpClass:ChartSharp.LineData"]]]]);

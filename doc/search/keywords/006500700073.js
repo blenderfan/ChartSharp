@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("eps",["Variable"],[["Epsilon",,[["ChartSharp.LineChart",,,,0,"File:LineChart.xaml.cs:ChartSharp.LineChart.Epsilon","CSharpClass:ChartSharp.LineChart:Epsilon"]]]]);

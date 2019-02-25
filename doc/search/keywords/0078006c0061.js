@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("xla",["Property"],[["XLabel",,[["ChartSharp.LineChart",,,,0,"File:LineChart.xaml.cs:ChartSharp.LineChart.XLabel","CSharpClass:ChartSharp.LineChart:XLabel"],["ChartSharp.SurfaceChart",,,,0,"File:SurfaceChart.xaml.cs:ChartSharp.SurfaceChart.XLabel","CSharpClass:ChartSharp.SurfaceChart:XLabel"]]]]);

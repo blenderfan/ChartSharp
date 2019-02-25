@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("isx",["Property"],[["IsXYVisible",,[["ChartSharp.Grid3DStyle",,,,0,"File:Grid3DStyle.cs:ChartSharp.Grid3DStyle.IsXYVisible","CSharpClass:ChartSharp.Grid3DStyle:IsXYVisible"]]],["IsXZVisible",,[["ChartSharp.Grid3DStyle",,,,0,"File:Grid3DStyle.cs:ChartSharp.Grid3DStyle.IsXZVisible","CSharpClass:ChartSharp.Grid3DStyle:IsXZVisible"]]]]);

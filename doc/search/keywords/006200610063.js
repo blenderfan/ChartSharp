@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("bac",["Property"],[["Background",,[["ChartSharp.GridStyle",,,,0,"File:GridStyle.cs:ChartSharp.GridStyle.Background","CSharpClass:ChartSharp.GridStyle:Background"]]],["BackgroundColor",,[["ChartSharp.Chart3DStyle",,,,0,"File:Chart3DStyle.cs:ChartSharp.Chart3DStyle.BackgroundColor","CSharpClass:ChartSharp.Chart3DStyle:BackgroundColor"]]]]);

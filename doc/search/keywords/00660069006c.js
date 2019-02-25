@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("fil",["Property"],[["Fill",,[["ChartSharp.LineData",,,,0,"File:LineData.cs:ChartSharp.LineData.Fill","CSharpClass:ChartSharp.LineData:Fill"],["ChartSharp.SurfaceData",,,,0,"File:SurfaceData.cs:ChartSharp.SurfaceData.Fill","CSharpClass:ChartSharp.SurfaceData:Fill"]]]]);

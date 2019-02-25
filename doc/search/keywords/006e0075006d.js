@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("num",["Property"],[["NumberFontSize",,[["ChartSharp.AxisStyle",,,,0,"File:AxisStyle.cs:ChartSharp.AxisStyle.NumberFontSize","CSharpClass:ChartSharp.AxisStyle:NumberFontSize"]]]]);

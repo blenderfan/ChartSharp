@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("col",["Property"],[["Color",,[["ChartSharp.AxisStyle",,,,0,"File:AxisStyle.cs:ChartSharp.AxisStyle.Color","CSharpClass:ChartSharp.AxisStyle:Color"]]]]);

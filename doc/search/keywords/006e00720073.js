@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("nrs",["Variable"],[["NrStdMarkings",,[["ChartSharp.LineChart",,,,0,"File:LineChart.xaml.cs:ChartSharp.LineChart.NrStdMarkings","CSharpClass:ChartSharp.LineChart:NrStdMarkings"]]]]);
