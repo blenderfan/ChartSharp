@@ -112,24 +112,24 @@ namespace ChartSharp
         #region DependencyProperties
 
 
-        public static readonly DependencyProperty ItemsSourceProperty = DependencyProperty.Register("ItemsSource", typeof(IEnumerable), typeof(SurfaceChart));
+        public static readonly DependencyProperty ItemsSourceProperty = DependencyProperty.Register("ItemsSource", typeof(IEnumerable), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(IEnumerable), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
-        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(SurfaceChart));
-        public static readonly DependencyProperty XLabelProperty = DependencyProperty.Register("XLabel", typeof(string), typeof(SurfaceChart));
-        public static readonly DependencyProperty YLabelProperty = DependencyProperty.Register("YLabel", typeof(string), typeof(SurfaceChart));
-        public static readonly DependencyProperty ZLabelProperty = DependencyProperty.Register("ZLabel", typeof(string), typeof(SurfaceChart));
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty XLabelProperty = DependencyProperty.Register("XLabel", typeof(string), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty YLabelProperty = DependencyProperty.Register("YLabel", typeof(string), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty ZLabelProperty = DependencyProperty.Register("ZLabel", typeof(string), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
-        public static readonly DependencyProperty MinXProperty = DependencyProperty.Register("MinX", typeof(double), typeof(SurfaceChart));
-        public static readonly DependencyProperty MinYProperty = DependencyProperty.Register("MinY", typeof(double), typeof(SurfaceChart));
-        public static readonly DependencyProperty MaxXProperty = DependencyProperty.Register("MaxX", typeof(double), typeof(SurfaceChart));
-        public static readonly DependencyProperty MaxYProperty = DependencyProperty.Register("MaxY", typeof(double), typeof(SurfaceChart));
-        public static readonly DependencyProperty MinZProperty = DependencyProperty.Register("MinZ", typeof(double), typeof(SurfaceChart));
-        public static readonly DependencyProperty MaxZProperty = DependencyProperty.Register("MaxZ", typeof(double), typeof(SurfaceChart));
+        public static readonly DependencyProperty MinXProperty = DependencyProperty.Register("MinX", typeof(double), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MinYProperty = DependencyProperty.Register("MinY", typeof(double), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MaxXProperty = DependencyProperty.Register("MaxX", typeof(double), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MaxYProperty = DependencyProperty.Register("MaxY", typeof(double), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MinZProperty = DependencyProperty.Register("MinZ", typeof(double), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MaxZProperty = DependencyProperty.Register("MaxZ", typeof(double), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
-        public static readonly DependencyProperty ChartStyleProperty = DependencyProperty.Register("ChartStyle", typeof(Chart3DStyle), typeof(SurfaceChart));
+        public static readonly DependencyProperty ChartStyleProperty = DependencyProperty.Register("ChartStyle", typeof(Chart3DStyle), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(Chart3DStyle), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
-        public static readonly DependencyProperty HeatStartProperty = DependencyProperty.Register("HeatStart", typeof(Color?), typeof(SurfaceChart));
-        public static readonly DependencyProperty HeatEndProeprty = DependencyProperty.Register("HeatEnd", typeof(Color?), typeof(SurfaceChart));
+        public static readonly DependencyProperty HeatStartProperty = DependencyProperty.Register("HeatStart", typeof(Color?), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(Color?), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty HeatEndProeprty = DependencyProperty.Register("HeatEnd", typeof(Color?), typeof(SurfaceChart), new FrameworkPropertyMetadata(default(Color?), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
         /* Property: ChartStyle
         

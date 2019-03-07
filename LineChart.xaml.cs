@@ -110,24 +110,18 @@ namespace ChartSharp
 
         #region DependencyProperties
 
-        public static readonly DependencyProperty ItemsSourceProperty = DependencyProperty.Register("ItemsSource", typeof(IEnumerable), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
+        public static readonly DependencyProperty ItemsSourceProperty = DependencyProperty.Register("ItemsSource", typeof(IEnumerable), typeof(LineChart), new FrameworkPropertyMetadata(default(IEnumerable), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
-        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
-        public static readonly DependencyProperty XLabelProperty = DependencyProperty.Register("XLabel", typeof(string), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
-        public static readonly DependencyProperty YLabelProperty = DependencyProperty.Register("YLabel", typeof(string), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
+        public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(LineChart), new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty XLabelProperty = DependencyProperty.Register("XLabel", typeof(string), typeof(LineChart), new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty YLabelProperty = DependencyProperty.Register("YLabel", typeof(string), typeof(LineChart), new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
-        public static readonly DependencyProperty MinXProperty = DependencyProperty.Register("MinX", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
-        public static readonly DependencyProperty MinYProperty = DependencyProperty.Register("MinY", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
-        public static readonly DependencyProperty MaxXProperty = DependencyProperty.Register("MaxX", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
-        public static readonly DependencyProperty MaxYProperty = DependencyProperty.Register("MaxY", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
+        public static readonly DependencyProperty MinXProperty = DependencyProperty.Register("MinX", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MinYProperty = DependencyProperty.Register("MinY", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MaxXProperty = DependencyProperty.Register("MaxX", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
+        public static readonly DependencyProperty MaxYProperty = DependencyProperty.Register("MaxY", typeof(double), typeof(LineChart), new FrameworkPropertyMetadata(default(double), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
-        public static readonly DependencyProperty ChartStyleProperty = DependencyProperty.Register("ChartStyle", typeof(ChartStyle), typeof(LineChart), new FrameworkPropertyMetadata(OnChartChangedCallback));
-
-        private static void OnChartChangedCallback(DependencyObject sender, DependencyPropertyChangedEventArgs e)
-        {
-            var chart = sender as LineChart;
-            chart.InvalidateVisual();
-        }
+        public static readonly DependencyProperty ChartStyleProperty = DependencyProperty.Register("ChartStyle", typeof(ChartStyle), typeof(LineChart), new FrameworkPropertyMetadata(default(ChartStyle), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault | FrameworkPropertyMetadataOptions.AffectsRender));
 
         /* Property: ChartStyle
         
@@ -587,8 +581,8 @@ namespace ChartSharp
                 axis.Y1 = MarginYTop + ChartStyle.PaddingY + graphSizeY;
                 if (isXAxis)
                 {
-                    axis.X2 = XAxisLine.X1 + graphSizeX;
-                    axis.Y2 = XAxisLine.Y1;
+                    axis.X2 = axis.X1 + graphSizeX;
+                    axis.Y2 = axis.Y1;
                 }
                 else
                 {
